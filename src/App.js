@@ -7,7 +7,7 @@ export default function App() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch("https://remotebirdjobs.azurewebsites.net/search", {
+    fetch("https://remotebirdjobsapi.azurewebsites.net/search/devrel%20hiring", {
       methods: "GET",
       headers: {
         "Content-Type": "application/json"
